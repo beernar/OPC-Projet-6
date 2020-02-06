@@ -1,0 +1,174 @@
+body
+{
+    height: 100%;
+    background-color: #ef85a3;
+}
+
+#conteneur 
+{
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: 100%;
+  background-image: url('../images/fond2.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #ef85a3;
+}
+
+#conteneurJeu
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+p
+{
+  font-family: consolas;
+  font-size: 20px;
+  color: #560020;
+}
+
+button
+{
+  width: 150px;
+  height: 50px;
+  font-family: consolas;
+  font-size: 25px;
+  background-color: rgb(58, 228, 52);
+  margin-bottom: 10%;
+}
+
+progress
+{
+width: 100%;
+}
+
+.element:nth-child(1)
+{
+  order: 1;
+  overflow: auto;
+  align-content: center;
+}
+
+.element:nth-child(2)
+{
+    order: 3;
+    overflow: auto;
+    align-content: center;
+}
+
+.element:nth-child(3)
+{
+    order: 2;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    padding-top: 4%;
+}
+
+td 
+{
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgb(161, 157, 159);
+  position: relative;
+}
+
+.Case 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background-color: white;
+}
+.Unable {
+  background-color: grey;
+}
+
+.Arme 
+{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 1px;
+  left: 1px;
+}
+.Arme.bazooka 
+{
+  background: url('../images/bazooka.jpg');
+  background-repeat: no-repeat;
+}
+
+.Arme.beretta 
+{
+  background: url('../images/beretta.jpg');
+  background-repeat: no-repeat;
+}
+
+.Arme.chatouilles 
+{
+  background: url('../images/chatouilles.jpg');
+  background-repeat: no-repeat;
+}
+
+.Arme.blague_carambar 
+{
+  background: url('../images/carambar.jpg');
+  background-repeat: no-repeat;
+}
+
+.Joueur 
+{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 1px;
+  left: 1px;
+  background-color: green;
+}
+
+.Joueur.joueur1 
+{
+  background: url('../images/joueur1.jpg');
+  background-repeat: no-repeat;
+}
+
+.Joueur.joueur2 
+{
+  background: url('../images/joueur2.jpg');
+  background-repeat: no-repeat;
+}
+
+img
+{
+    overflow: auto;
+}
+
+.armeJ1
+{
+    overflow: auto;
+}
+
+.armeJ2
+{
+    overflow: auto;
+}
+
+.joueur1 
+{
+    justify-content: center;
+}
+
+.joueur2 
+{
+    justify-content: center;
+}
+
